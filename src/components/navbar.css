@@ -1,0 +1,36 @@
+.nav-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 10px;
+}
+
+.logo {
+  width: 5%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  list-style: none;
+  width: 50%;
+}
+
+.menulinks {
+  color: #606060;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.menulinks:hover {
+  color: #c8c8c8;
+  transition: 0.8s ease 0s;
+}
+
+.menulinks.active {
+  color: #05a72b;
+}
