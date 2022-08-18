@@ -1,13 +1,16 @@
 .nav-head {
   display: flex;
+  position: fixed;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   background-color: #000;
-  padding: 10px;
+  padding: 2px;
+  box-shadow: #00000055 0 2px 8px 0;
 }
 
 .logo {
-  width: 5%;
+  width: 4%;
 }
 
 .menu {
@@ -32,5 +35,5 @@
 }
 
 .menulinks.active {
-  color: #05a72b;
+  color: #7606d1;
 }
