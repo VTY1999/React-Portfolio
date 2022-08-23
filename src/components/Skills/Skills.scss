@@ -1,0 +1,55 @@
+.Skills {
+  background-color: #000;
+  color: #fff;
+  padding: 9%;
+}
+
+.Skills__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #7606d1;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.skills__frontend {
+  background-color: #27044267;
+  padding: 6%;
+  border-radius: 20px;
+}
+
+.skills__backend {
+  background-color: #27044267;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.skills__head {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #f8e9ff;
+}
+
+.skills-items-icon {
+  color: #7606d1;
+  margin-right: 5px;
+}
+
+.skills__content {
+  column-count: 2;
+  margin-top: 5%;
+}
+
+.skills-items {
+  display: flex;
+  width: 100%;
+  padding: 10%;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
