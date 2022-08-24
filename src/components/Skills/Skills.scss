@@ -24,10 +24,24 @@
   border-radius: 20px;
 }
 
+.skills__frontend:hover {
+  background-color: transparent;
+  color: #7606d15e;
+  border: 1px solid #7606d1;
+  transition: 2.0s ease 0s;
+}
+
 .skills__backend {
   background-color: #27044267;
   padding: 5%;
   border-radius: 20px;
+}
+
+.skills__backend:hover {
+  background-color: transparent;
+  color: #7606d15e;
+  border: 1px solid #7606d1;
+  transition: 2.0s ease 0s;
 }
 
 .skills__head {
