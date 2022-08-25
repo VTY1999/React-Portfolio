@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsGithub, BsEyeFill } from 'react-icons/bs';
 import Image1 from '../../assets/Screenshot (26).png';
 import Image2 from '../../assets/Screenshot (192).png';
 import Image3 from '../../assets/Screenshot (128).png';
@@ -48,25 +49,25 @@ function Portfolio() {
       <div className="container">
         {Projects.map((Pro) => (
           <article className="portfolio__item" key={Pro.id}>
-            <div className="portfolio__item-image">
-              <img src={Pro.img} alt={Pro.title} />
+            <div className="portfolio-image">
+              <img src={Pro.img} className="img" alt="img" />
             </div>
             <div className="portfolio-content">
-              <h3>{Pro.title}</h3>
-              <p>{Pro.description}</p>
+              <h3 className="title">{Pro.title}</h3>
+              <p className="decrib">{Pro.description}</p>
             </div>
-            <div className="portfoli">
-              <a
-                href={Pro.github}
-                className="btn"
-              >
-                GitHub
-              </a>
+            <div className="View">
               <a
                 href={Pro.demo}
-                className="btn"
+                className="btn1"
               >
-                Live Demo
+                <BsEyeFill />
+              </a>
+              <a
+                href={Pro.github}
+                className="btn1"
+              >
+                <BsGithub />
               </a>
             </div>
           </article>
