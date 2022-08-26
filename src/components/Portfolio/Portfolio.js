@@ -46,6 +46,7 @@ function Portfolio() {
     <section className="Portfolio">
       <h2 className="Portfolio-title">Portfolio</h2>
       <hr className="h" />
+      <p className="recent">My Recent Works</p>
       <div className="container">
         {Projects.map((Pro) => (
           <article className="portfolio__item" key={Pro.id}>

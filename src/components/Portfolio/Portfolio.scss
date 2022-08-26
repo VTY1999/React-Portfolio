@@ -1,5 +1,5 @@
 .Portfolio {
-  background-image: #000;
+  background: #000;
   padding: 9%;
 }
 
@@ -14,7 +14,15 @@
 .h {
   width: 2%;
   margin-top: 5px;
-  background-color: #ff0000;
+  background-color: #f00;
+}
+
+.recent {
+  color: #ffffff60;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 .container {
