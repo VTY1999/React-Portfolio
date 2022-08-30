@@ -12,6 +12,9 @@
 
 .container-contact {
   height: 300px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4%;
   padding-top: 5%;
   background-color: #000;
@@ -40,7 +43,7 @@
 .email {
   border: transparent;
   padding: 2%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .email::placeholder {
@@ -50,7 +53,7 @@
 .subject {
   border: transparent;
   padding: 2%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .subject::placeholder {
@@ -59,7 +62,7 @@
 
 .message {
   border: transparent;
-  margin-top: 2%;
+  margin-top: 4%;
   padding: 2%;
   padding-bottom: 10%;
   overflow: hidden;
@@ -67,4 +70,23 @@
 
 .message::placeholder {
   color: #00000036;
+}
+
+.send {
+  margin-top: 4%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #010002;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.send:hover {
+  background-color: #7606d1;
+  color: #fff;
 }
