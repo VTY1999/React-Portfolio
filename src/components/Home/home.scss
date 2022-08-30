@@ -3,6 +3,18 @@
   font-family: 'Inter', sans-serif;
 }
 
+.Home::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 850px;
+  z-index: -1;
+  opacity: 20%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/laptop-desk-notebook-macbook-table-technology-18-pxhere.com.jpg);  
+}
+
 .homehead {
   color: #000;
   font-size: 80px;
