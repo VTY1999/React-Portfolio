@@ -12,7 +12,7 @@
 
 .container-contact {
   height: 300px;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
@@ -31,9 +31,16 @@
   margin-right: auto;
 }
 
+.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .fullName {
   border: transparent;
   padding: 2%;
+  width: 43%;
 }
 
 .fullName::placeholder {
@@ -43,7 +50,7 @@
 .email {
   border: transparent;
   padding: 2%;
-  margin-top: 4%;
+  width: 43%;
 }
 
 .email::placeholder {
@@ -89,4 +96,21 @@
 .send:hover {
   background-color: #7606d1;
   color: #fff;
+}
+
+.form-social {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid;
+  width: 70%;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-social a {
+  margin-top: 3%;
+  padding: 2%;
+  color: #fff;
+  font-size: 20px;
 }
