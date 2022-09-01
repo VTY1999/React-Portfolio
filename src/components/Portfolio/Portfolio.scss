@@ -1,6 +1,5 @@
 .Portfolio {
-  background: #0b0b0b;
-  background-image: url(../../assets/53544-8-abstract-shape-png-download-free.png);
+  background: #fff;
   background-size: 20px;
   padding: 9%;
 }
@@ -20,7 +19,7 @@
 }
 
 .recent {
-  color: #ffffff60;
+  color: #939393;
   text-align: center;
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
@@ -36,13 +35,14 @@
 
 .portfolio__item {
   position: relative;
-  background-color: #27044267;
+  background-color: #3b023a;
   display: block;
   flex-direction: column;
   text-align: center;
   border-radius: 20px;
   margin: 10%;
   padding-bottom: 80px;
+  box-shadow: #000 0 2px 8px 0;
   overflow: hidden;
 }
 

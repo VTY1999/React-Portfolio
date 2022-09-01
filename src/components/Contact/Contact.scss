@@ -1,3 +1,116 @@
-* {
-  margin: 0;
+.Contact {
+  background-color: #fff;
+  padding: 9%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-haed {
+  text-align: center;
+  color: #7606d1;
+  font-size: 30px;
+}
+
+.container-contact {
+  height: 300px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  padding-top: 5%;
+  background-color: #000;
+  color: #fff;
+  box-shadow: #000 0 2px 8px 0;
+  padding-bottom: 10%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fullName {
+  border: transparent;
+  padding: 2%;
+  width: 43%;
+}
+
+.fullName::placeholder {
+  color: #00000036;
+}
+
+.email {
+  border: transparent;
+  padding: 2%;
+  width: 43%;
+}
+
+.email::placeholder {
+  color: #00000036;
+}
+
+.subject {
+  border: transparent;
+  padding: 2%;
+  margin-top: 4%;
+}
+
+.subject::placeholder {
+  color: #00000036;
+}
+
+.message {
+  border: transparent;
+  margin-top: 4%;
+  padding: 2%;
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+
+.message::placeholder {
+  color: #00000036;
+}
+
+.send {
+  margin-top: 4%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #010002;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.send:hover {
+  background-color: #7606d1;
+  color: #fff;
+}
+
+.form-social {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid;
+  width: 70%;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-social a {
+  margin-top: 3%;
+  padding: 2%;
+  color: #fff;
+  font-size: 20px;
 }
