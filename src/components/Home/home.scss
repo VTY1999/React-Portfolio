@@ -10,7 +10,7 @@
   height: 850px;
   z-index: -1;
   opacity: 20%;
-  background-position-y: 40px;
+  background-position-y: 25px;
   background-repeat: no-repeat;
   background-image: url(../../assets/laptop-desk-notebook-macbook-table-technology-18-pxhere.com.jpg);
 }
@@ -111,4 +111,78 @@ hr {
   padding: 2%;
   color: #000;
   font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .Home::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    z-index: -1;
+    opacity: 20%;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/laptop-desk-notebook-macbook-table-technology-18-pxhere.com.jpg);
+  }
+  
+  .homehead {
+    color: #000;
+    font-size: 40px;
+    width: 40%;
+    padding: 20%;
+    margin-top: 5%;
+  }
+
+  .card-container {
+    background-color: #000;
+    width: 100%;
+    height: 700px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    border: 1px solid #7606d1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic {
+    width: 50%;
+    border-radius: 50%;
+    transform: scale(0.5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pro {
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #7606d1;
+  }
+
+  .summary {
+    font-size: 13px;
+    font-weight: bold;
+    width: 90%;
+  }
+
+  .btn {
+    padding: 5px 0;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    font-size: 10px;
+  }
 }
