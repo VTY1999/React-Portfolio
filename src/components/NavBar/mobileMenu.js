@@ -25,8 +25,8 @@ const MenuLabel = styled.label`
 const NavBackground = styled.div`
 @media screen and (max-width: 800px) {
   position: fixed;
-  top: 1.5rem;
-  right: 6.5rem;
+  top: -15px;
+  right: -5px;
   background-image: radial-gradient(
     ${COLORS.primaryDark},
     ${COLORS.primaryLight}
@@ -36,7 +36,7 @@ const NavBackground = styled.div`
   border-radius: 50%;
   z-index: 600;
   transform: ${(props) => (props.clicked ? 'scale(80)' : 'scale(0)')};
-  transition: transform 0.8s;
+  transition: transform 1s;
 }
 `;
 

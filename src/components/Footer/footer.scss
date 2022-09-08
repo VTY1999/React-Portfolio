@@ -1,5 +1,7 @@
 .Footer {
   display: flex;
+  position: fixed;
+  z-index: 1;
   background-color: #000;
   color: #d7d7d7;
   width: 100%;
