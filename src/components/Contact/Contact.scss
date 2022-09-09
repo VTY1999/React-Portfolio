@@ -114,3 +114,39 @@
   color: #fff;
   font-size: 20px;
 }
+
+.send:active {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-haed {
+    margin-top: 20%;
+  }
+
+  .container-contact {
+    width: 90%;
+  }
+
+  .form {
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .send {
+    width: 50%;
+  }
+
+  .send:active {
+    background-color: #7606d1;
+    color: #fff;
+  }
+
+  .form-social {
+    margin-top: 25%;
+  }
+
+  .form-social a {
+    margin-top: 10%;
+  }
+}
