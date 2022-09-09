@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/navbar';
+import MobileMenu from './components/NavBar/mobileMenu';
 import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Portfolio" element={<Portfolio />} />

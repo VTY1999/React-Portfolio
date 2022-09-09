@@ -38,3 +38,13 @@
 .menulinks.active {
   color: #7606d1;
 }
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 15%;
+  }
+
+  .menulinks {
+    display: none;
+  }
+}

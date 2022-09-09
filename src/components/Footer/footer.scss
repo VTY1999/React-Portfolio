@@ -1,5 +1,7 @@
 .Footer {
   display: flex;
+  position: fixed;
+  z-index: 1;
   background-color: #000;
   color: #d7d7d7;
   width: 100%;
@@ -14,4 +16,20 @@
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   margin: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  .Footer {
+    z-index: 1;
+  }
+
+  .footerLogo {
+    width: 15%;
+  }
+
+  .Copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 8px;
+    margin: 6%;
+  }
 }

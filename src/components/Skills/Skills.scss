@@ -67,3 +67,33 @@
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 800px) {
+  .Skills {
+    padding-bottom: 35%;
+  }
+
+  .Skills__title {
+    margin-top: 20%;
+  }
+
+  .skills__container {
+    display: flex;
+    padding: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+  }
+
+  .skills__backend {
+    margin-top: 10%;
+  }
+
+  .skills__head {
+    font-size: 15px;
+  }
+
+  .skills-items {
+    font-size: 10px;
+  }
+}

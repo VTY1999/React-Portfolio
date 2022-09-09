@@ -102,3 +102,15 @@
   transform: translateY(250px);
   -webkit-transform: translateY(250px);
 }
+
+@media screen and (max-width: 800px) {
+  .Portfolio-title {
+    margin-top: 20%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

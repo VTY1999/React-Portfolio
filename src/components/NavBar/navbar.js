@@ -33,9 +33,12 @@ function NavBar() {
         <ul className="menu">
           {
                           navItems.map((navItems) => (
-                            <li key={navItems.id}>
-                              <NavLink to={navItems.path} className="menulinks">{navItems.text}</NavLink>
-                            </li>
+                            <>
+                              <li key={navItems.id}>
+                                <NavLink to={navItems.path} className="menulinks">{navItems.text}</NavLink>
+                              </li>
+
+                            </>
                           ))
                       }
         </ul>
