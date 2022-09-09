@@ -79,7 +79,7 @@
   color: #00000036;
 }
 
-.send {
+.form-btn {
   margin-top: 4%;
   padding: 10px 0;
   margin-left: auto;
@@ -93,9 +93,18 @@
   text-decoration: none;
 }
 
-.send:hover {
+.form-btn:hover {
   background-color: #7606d1;
   color: #fff;
+}
+
+.success-msg {
+  padding: 10%;
+  margin-top: 10%;
+  color: #270044;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35PX;
+  text-align: center;
 }
 
 .form-social {
@@ -133,11 +142,11 @@
     margin-top: 10%;
   }
 
-  .send {
+  .form-btn {
     width: 50%;
   }
 
-  .send:active {
+  .form-btn:active {
     background-color: #7606d1;
     color: #fff;
   }
