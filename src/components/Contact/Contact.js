@@ -10,55 +10,62 @@ function Contact() {
   }
 
   return (
-    <section className="Contact">
+    <section id="Contact">
       <h1 className="contact-haed">Let&apos;s talk</h1>
       <div className="container-contact">
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="input-row">
+        <div className="text-form">
+          <p className="contact-text">
+            I&apos;m open to job opportunities and side projects,
+            so if you&apos;d like to chat please get in touch.
+
+          </p>
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="input-row">
+              <input
+                type="text"
+                name="name"
+                className="fullName"
+                placeholder="Full Name"
+                maxLength="50"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                className="email"
+                placeholder="Email"
+                maxLength="50"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
             <input
               type="text"
-              name="name"
-              className="fullName"
-              placeholder="Full Name"
+              name="Subject"
+              className="subject"
+              placeholder="Subject"
               maxLength="50"
               required
             />
-            <input
-              type="email"
-              name="email"
-              className="email"
-              placeholder="Email"
-              maxLength="50"
+            <textarea
+              placeholder="Message..."
+              className="message"
+              name="message"
               required
             />
             <ValidationError
-              prefix="Email"
-              field="email"
+              prefix="Message"
+              field="message"
               errors={state.errors}
             />
-          </div>
-          <input
-            type="text"
-            name="Subject"
-            className="subject"
-            placeholder="Subject"
-            maxLength="50"
-            required
-          />
-          <textarea
-            placeholder="Message..."
-            className="message"
-            name="message"
-            required
-          />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
 
-          <button className="form-btn" type="submit" disabled={state.submitting}>Get in touch</button>
-        </form>
+            <button className="form-btn" type="submit" disabled={state.submitting}>Get in touch</button>
+          </form>
+        </div>
         <div className="form-social">
           <a href="https://www.linkedin.com/in/francis-o-verissimo/" alt="LinkedIn"><FaLinkedin /></a>
           <a href="https://github.com/VTY1999" alt="GitHub"><FaGithub /></a>

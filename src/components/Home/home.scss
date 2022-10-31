@@ -1,15 +1,15 @@
-.Home {
+#Home {
   display: flex;
   font-family: 'Inter', sans-serif;
 }
 
-.Home::before {
+#Home::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 850px;
+  height: 825px;
   z-index: -1;
-  opacity: 20%;
+  opacity: 30%;
   background-position-y: 25px;
   background-repeat: no-repeat;
   background-image: url(../../assets/laptop-desk-notebook-macbook-table-technology-18-pxhere.com.jpg);
@@ -46,11 +46,12 @@
 }
 
 .pic {
-  width: 35%;
-  border-radius: 40%;
+  width: 50%;
+  border-radius: 50%;
   transform: scale(0.5);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .pro {
@@ -114,13 +115,13 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-  .Home {
+  #Home {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
   }
 
-  .Home::before {
+  #Home::before {
     content: "";
     position: absolute;
     width: 100%;
