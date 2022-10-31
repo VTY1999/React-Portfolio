@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import logo from '../../assets/1.png';
 import './navbar.scss';
 
@@ -7,22 +6,22 @@ function NavBar() {
   const navItems = [
     {
       id: 1,
-      path: '/',
+      path: '#Home',
       text: 'HOME',
     },
     {
       id: 2,
-      path: '/Portfolio',
+      path: '#Portfolio',
       text: 'PORTFOLIO',
     },
     {
       id: 3,
-      path: '/Skills',
+      path: '#Skills',
       text: 'SKILLS',
     },
     {
       id: 4,
-      path: '/Contact',
+      path: '#Contact',
       text: 'CONTACT',
     },
   ];
@@ -33,12 +32,11 @@ function NavBar() {
         <ul className="menu">
           {
                           navItems.map((navItems) => (
-                            <>
-                              <li key={navItems.id}>
-                                <NavLink to={navItems.path} className="menulinks">{navItems.text}</NavLink>
-                              </li>
 
-                            </>
+                            <li key={navItems.id}>
+                              <a href={navItems.path} className="menulinks">{navItems.text}</a>
+                            </li>
+
                           ))
                       }
         </ul>

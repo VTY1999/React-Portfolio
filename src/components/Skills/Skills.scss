@@ -1,4 +1,4 @@
-.Skills {
+#Skills {
   background-color: #000;
   color: #fff;
   padding: 9%;
@@ -20,26 +20,39 @@
 
 .skills__frontend {
   background-color: #27044267;
-  padding: 6%;
+  padding: 3%;
+  width: 25%;
   border-radius: 20px;
 }
 
 .skills__frontend:hover {
   background-color: transparent;
-  color: #7606d15e;
   border: 1px solid #7606d1;
   transition: 2s ease 0s;
 }
 
 .skills__backend {
   background-color: #27044267;
-  padding: 5%;
+  width: 25%;
+  padding: 3%;
   border-radius: 20px;
 }
 
 .skills__backend:hover {
   background-color: transparent;
-  color: #7606d15e;
+  border: 1px solid #7606d1;
+  transition: 2s ease 0s;
+}
+
+.skills__professional {
+  background-color: #27044267;
+  width: 25%;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+.skills__professional:hover {
+  background-color: transparent;
   border: 1px solid #7606d1;
   transition: 2s ease 0s;
 }
@@ -47,11 +60,12 @@
 .skills__head {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  color: #f8e9ff;
+  color: #a075ff60;
+  text-align: center;
 }
 
 .skills-items-icon {
-  color: #7606d1;
+  color: #a075ff60;
   margin-right: 5px;
 }
 
@@ -63,13 +77,13 @@
 .skills-items {
   display: flex;
   width: 100%;
-  padding: 10%;
-  font-size: 15px;
+  padding: 20%;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 800px) {
-  .Skills {
+  #Skills {
     padding-bottom: 35%;
   }
 

@@ -152,22 +152,22 @@ function MoblieMenu() {
       <Navigation clicked={click} className="mobile-menulist">
         <List>
           <li>
-            <ItemLink onClick={handleClick} to="/">
+            <ItemLink onClick={handleClick} to="#Home">
               HOME
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="/Portfolio">
+            <ItemLink onClick={handleClick} to="#Portfolio">
               PORTFOLIO
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="/Skills">
+            <ItemLink onClick={handleClick} to="#Skills">
               SKILLS
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="/Contact">
+            <ItemLink onClick={handleClick} to="#Contact">
               CONTACT
             </ItemLink>
           </li>

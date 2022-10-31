@@ -4,7 +4,7 @@ import './Skills.scss';
 
 function Skills() {
   return (
-    <section className="Skills">
+    <section id="Skills">
       <h2 className="Skills__title">Skills</h2>
       <div className="skills__container">
         <div className="skills__frontend">
@@ -66,6 +66,35 @@ function Skills() {
             <article className="skills-items">
               <BsFillPatchCheckFill className="skills-items-icon" />
               <h4>Restful API</h4>
+            </article>
+          </div>
+        </div>
+        <div className="skills__professional">
+          <h3 className="skills__head">Professional</h3>
+          <div className="skills__content">
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Pair-Programming</h4>
+            </article>
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Teamwork</h4>
+            </article>
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Mentoring</h4>
+            </article>
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Communication</h4>
+            </article>
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Adaptability</h4>
+            </article>
+            <article className="skills-items">
+              <BsFillPatchCheckFill className="skills-items-icon" />
+              <h4>Problem-solving</h4>
             </article>
           </div>
         </div>
