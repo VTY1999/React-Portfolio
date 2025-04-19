@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from 'react-elastic-carousel';
 import { BsGithub, BsEyeFill } from 'react-icons/bs';
 import Image1 from '../../assets/Screenshot (26).png';
 import Image2 from '../../assets/Screenshot (192).png';
@@ -6,7 +7,7 @@ import Image3 from '../../assets/Screenshot (128).png';
 import Image4 from '../../assets/Screenshot (196).png';
 import './Portfolio.scss';
 
-function Portfolio() {
+const Portfolio = () => {
   const Projects = [
     {
       id: 1,
@@ -39,7 +40,7 @@ function Portfolio() {
       id: 4,
       title: 'Rent A Car',
       img: Image4,
-      description: 'This is a car rental website that allows you to view a variety of cars and book them at different rates. User can see all models and model details and rerve car. Admin can add and delete car.',
+      description: 'This is a car rental website that allows you to view a variety of cars and book them at different rates.',
       stack: 'React | CSS | SCSS | Ruby on Rails',
       demo: 'https://rent-car-service.netlify.app/',
       github: 'https://github.com/Gegardus/book-a-car-frontend',
@@ -51,42 +52,41 @@ function Portfolio() {
       <h2 className="Portfolio-title">Portfolio</h2>
       <hr className="h" />
       <p className="recent">My Recent Works</p>
-      <div className="container">
+
+      <Carousel
+        itemsToShow={1}
+        showArrows
+        pagination
+      >
+
         {Projects.map((Pro) => (
           <article className="portfolio__item" key={Pro.id}>
             <div className="portfolio-image">
-              <img src={Pro.img} className="img" alt="img" />
+              <img src={Pro.img} className="img" alt={Pro.title} />
             </div>
             <div className="portfolio-content">
               <h3 className="title">{Pro.title}</h3>
               <p className="decrib">{Pro.description}</p>
               <p className="stack">
                 Stack:
-                {' '}
                 {Pro.stack}
               </p>
             </div>
             <div className="View">
-              <a
-                href={Pro.demo}
-                className="btn1"
-              >
+              <a href={Pro.demo} className="btn1" target="_blank" rel="noopener noreferrer">
                 <BsEyeFill />
                 <p className="btn-text">Live Demo</p>
               </a>
-              <a
-                href={Pro.github}
-                className="btn1"
-              >
+              <a href={Pro.github} className="btn1" target="_blank" rel="noopener noreferrer">
                 <BsGithub />
                 <p className="btn-text">GitHub</p>
               </a>
             </div>
           </article>
         ))}
-      </div>
+      </Carousel>
     </section>
   );
-}
+};
 
 export default Portfolio;

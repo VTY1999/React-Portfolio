@@ -26,13 +26,6 @@
   font-size: 15px;
 }
 
-.container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 1fr;
-  margin-top: 40px;
-}
-
 .portfolio__item {
   position: relative;
   background-color: #3b023a;
@@ -103,7 +96,7 @@
 .portfolio__item .View .btn1 {
   height: 0;
   margin: 2%;
-  margin-top: -80px;
+  margin-top: -7px;
   justify-content: space-between;
   text-decoration: none;
   color: #000;
@@ -125,14 +118,106 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 800px) {
-  .Portfolio-title {
-    margin-top: 20%;
+.rec-arrow {
+  background-color: #333;
+  color: #7606d1;
+  border: none;
+  &:hover {
+    background-color: #f3ca2f;
+    color: #000;
+  }
+}
+
+.rec-dot {
+  background-color: #ffffff; // white background
+  border: 2px solid #7606d1; // purple border
+  border-radius: 50%;        // make it circular
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    background-color: #7606d1;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 4px #7606d1;
+  }
+}
+
+.rec-dot_active {
+  background-color: #7606d1;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 6px #7606d1;
+}
+
+@media (max-width: 768px) {
+  #Portfolio {
+    padding: 5% 4%;
+    background-size: 10px;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .Portfolio-title {
+    font-size: 24px;
+  }
+
+  .h {
+    width: 10%;
+    height: 2px;
+  }
+
+  .recent {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .portfolio__item {
+    margin: 5% auto;
+    padding-bottom: 60px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: #3b023a 0 1px 4px 0;
+  }
+
+  .portfolio__item .View .btn1 {
+    margin-top: -100px;
+  }
+
+  .img {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .decrib,
+  .stack {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .View {
+    font-size: 28px;
+  }
+
+  .btn-text {
+    font-size: 10px;
+  }
+
+  .rec-arrow {
+    font-size: 20px;
+    padding: 0.5rem;
+  }
+
+  .rec-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .rec-dot_active {
+    width: 10px;
+    height: 10px;
   }
 }

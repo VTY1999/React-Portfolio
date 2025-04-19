@@ -6,7 +6,7 @@ import './Contact.scss';
 function Contact() {
   const [state, handleSubmit] = useForm('xkneopej');
   if (state.succeeded) {
-    return <p className="success-msg">Thanks for your message. I&apos;m unavailable right now, but will respond as soon as possible! 😜</p>;
+    return <p className="success-msg">Thanks for your message. I&apos;m unavailable right now, but I will respond soon! 😜</p>;
   }
 
   return (

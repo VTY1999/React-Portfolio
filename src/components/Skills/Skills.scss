@@ -99,15 +99,35 @@
     margin-top: 10%;
   }
 
-  .skills__backend {
-    margin-top: 10%;
-  }
-
   .skills__head {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .skills-items {
-    font-size: 10px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .skills__frontend {
+    background-color: #27044267;
+    padding: 3%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .skills__backend {
+    background-color: #27044267;
+    width: 100%;
+    margin-top: 10%;
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  .skills__professional {
+    background-color: #27044267;
+    width: 100%;
+    margin-top: 10%;
+    padding: 3%;
+    border-radius: 20px;
   }
 }
