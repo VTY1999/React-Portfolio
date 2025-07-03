@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/navbar';
 import MobileMenu from './components/NavBar/mobileMenu';
 import Home from './components/Home/Home';
@@ -13,12 +12,10 @@ function App() {
     <div className="App">
       <NavBar />
       <MobileMenu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      <Home />
+      <Portfolio />
+      <Skills />
+      <Contact />
       <Footer />
     </div>
   );

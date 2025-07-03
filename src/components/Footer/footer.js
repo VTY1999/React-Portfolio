@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="Footer">
       <img src={footerLogo} className="footerLogo" alt="logo" />
-      <p className="Copyright">Copyright © 2022 Francis Verissimo. All rights reserved.</p>
+      <p className="Copyright">Copyright © 2025 Francis Verissimo. All rights reserved.</p>
     </div>
   );
 }
