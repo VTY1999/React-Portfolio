@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import { BsGithub, BsEyeFill } from 'react-icons/bs';
+import Watchsphere from '../../assets/Screenshot 2025-05-01 123316.png';
 import Image1 from '../../assets/Screenshot (26).png';
 import Image2 from '../../assets/Screenshot (192).png';
 import Image3 from '../../assets/Screenshot (128).png';
@@ -11,6 +12,15 @@ const Portfolio = () => {
   const Projects = [
     {
       id: 1,
+      title: 'Watch Sphere',
+      img: Watchsphere,
+      description: 'A sleek web app for exploring Movies and TV Shows using TMDB data, featuring trailers, cast info, ratings, and more in a responsive UI.',
+      stack: 'Next.js | React | Tailwind CSS',
+      demo: 'https://thewatchsphere.netlify.app/',
+      github: 'https://github.com/VTY1999/movie-tv-tracker',
+    },
+    {
+      id: 2,
       title: 'CONFERENCE PAGE',
       img: Image1,
       description: 'This is a conference page about an art summit displaying the main program, speakers and the about section which displays past events.',
@@ -19,7 +29,7 @@ const Portfolio = () => {
       github: 'https://github.com/VTY1999/Conference-page',
     },
     {
-      id: 2,
+      id: 3,
       title: 'AIR POLLUTION',
       img: Image2,
       description: 'This webapp tracks air pollution in more than 20 countries drawing data from an API',
@@ -28,7 +38,7 @@ const Portfolio = () => {
       github: 'https://github.com/VTY1999/React-Capstone',
     },
     {
-      id: 3,
+      id: 4,
       title: 'MATH MAGICIANS',
       img: Image3,
       description: 'Math magicians is a website for all mathematics fans. It is a Single Page App (SPA) that allows users to make calculations and read a random math-related quote.',
@@ -37,7 +47,7 @@ const Portfolio = () => {
       github: 'https://github.com/VTY1999/Math-Magicians',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Rent A Car',
       img: Image4,
       description: 'This is a car rental website that allows you to view a variety of cars and book them at different rates.',
